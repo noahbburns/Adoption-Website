@@ -6,7 +6,7 @@ session_start();
         $_SESSION['taken'] = false;
          $username = $_POST['username'];
          $password = $_POST['password'];
-         $file = fopen("login.txt", "r");
+         $file = fopen("login.txt", "a+");
 
          $flag = false;
          if($file) {
@@ -23,9 +23,9 @@ session_start();
                 exit;
             } else {
                 $_SESSION['taken'] = false;
-                header("Location: index.php");
                 fwrite($file, $username . ":" . $password ."\n");
                 fclose($file);
+                header("Location: login.php");
                 exit;
             }
             

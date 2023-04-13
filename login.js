@@ -59,40 +59,38 @@ const isValidPassword = password => {
   
   
 
-const validateInputs = () => {
+  const validateInputs = () => {
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const confrimpasswordValue = confirmpassword.value.trim();
+    let isValid = true;
 
     if(usernameValue === '') {
         setError(username, 'Username is required');
+        isValid = false;
     } else {
         setSuccess(username);
     }
 
-    if(emailValue === '') {
-        setError(email, 'Email is required');
-    } else if (!isValidEmail(emailValue)) {
-        setError(email, 'Provide a valid email address');
-    } else {
-        setSuccess(email);
-    }
-
     if(passwordValue === '') {
         setError(password, 'Password is required');
+        isValid = false;
     } else if(!isValidPassword(passwordValue)) {
         setError(password, "Provide a valid password");
+        isValid = false;
     } else {
         setSuccess(password);
     }
 
     if(confrimpasswordValue === '') {
         setError(confirmpassword, 'Must confirm the password')
+        isValid = false;
     } else if(confrimpasswordValue !== passwordValue) {
         setError(confirmpassword, "test");
+        isValid = false;
     } else {
         setSuccess(confirmpassword);
     }
-    return true;
+    return isValid;
 }

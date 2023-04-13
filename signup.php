@@ -26,18 +26,12 @@
     <div class="wrapper">
         <div class="form-box login">
             <h2>Signup</h2>
-            <form id = "form" action="signupValidation.php" method="post" onsubmit = "return validateInputs()">
+            <form action="signupValidation.php" method="POST" onsubmit = "return validateInput()">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
                     <input id = "username" name="username" type="text">
                     <div id = "username-error" class="error"></div>
                     <label>Username</label>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input id = "email" name="email" type="email">
-                    <div class="error"></div>
-                    <label>Email</label>
-                </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                     <input id = "password" name="password" type="password">
@@ -45,12 +39,12 @@
                     <label>Password</label>
                 </div>
                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <span class="icon"><ion-i2con name="lock-closed"></ion-icon></span>
                     <input id = "confirmpassword" name="confirmPassword" type="password">
                     <div class="error"></div>
                     <label>Confirm Password</label>
                 </div>
-                <button type = "submit" name = "submit" class = "btn">Signup</button>
+                <button type = "submit" name = "submit" class = "btn" value="submit">Signup</button>
                 <div class="login-here">
                     <h4>Already have an account?</h4>
                     <a href = "login.php">Login here</a>
