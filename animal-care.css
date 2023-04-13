@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date {
+ margin-left: 40em;
+}
+
+/*--------dog care--------*/
+.dog-care-body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  position: relative;
+}
+
+.container-dog{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container-dog .main-card-dog{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card-dog{
+  margin-left: -100%;
+}
+.container-dog .main-card-dog .cards-dog{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card-dog .cards-dog .card-dog{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card-dog .cards-dog .card-dog:hover{
+  transform: translateY(-15px);
+}
+.cards-dog .card-dog .content-dog{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards-dog .card-dog .content-dog .img-dog{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  margin-bottom: 14px;
+}
+.card-dog .content-dog .img-dog img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-dog .content-dog .name-dog{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-dog .content-dog .content-info-dog{
+  margin-top: 10px;
+  display: flex;
+}
+
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-card-dog .cards-dog .card-dog {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/*--------cat care---------*/
+
+.cat-care-body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  position: relative;
+}
+
+.container-cat{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container-cat .main-card-cat{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card-cat{
+  margin-left: -100%;
+}
+.container-cat .main-card-cat .cards-cat{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card-cat .cards-cat .card-cat{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card-cat .cards-cat .card-cat:hover{
+  transform: translateY(-15px);
+}
+.cards-cat .card-cat .content-cat{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards-cat .card-cat .content-cat .img-cat{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  margin-bottom: 14px;
+}
+.card-cat .content-cat .img-cat img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-cat .content-cat .name-cat{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-cat .content-cat .content-info-cat{
+  margin-top: 10px;
+  display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-card-cat .cards-cat .card-cat {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/*--------header & nav & footer for animal care-------*/
+.header {
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white; 
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 20px;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px;
+  z-index: 4;
+  width: 176px
+}
+
+@media only screen and (max-width: 767px) {
+.side-menu {
+  display: none;
+}
+}
+
+
+.side-menu a {
+  border-radius: 40px;
+  padding: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  color: #acabab;
+}
+
+.side-menu .home-link {
+font-weight: bold;
+color: black;
+}
+
+.side-menu .home-link:hover {
+  color: #4e4e4e;
+}
+
+footer {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  color: #fff;
+}
+
+@media (max-height: 720px) {
+footer {
+  position: relative;
+}
+}
+
+
+.footer {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer a {
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+}
+
+.footer a:hover{
+  border: 1px solid #d4d4d4;
+  color: #d4d4d4;
+}

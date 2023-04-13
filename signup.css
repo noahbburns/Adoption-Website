@@ -1,0 +1,238 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  background-size: cover;
+  background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: white; 
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 20px;
+  border-radius: 25%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.date {
+  margin-left: 40em;
+}
+
+.side-menu {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px;
+  z-index: 4;
+  width: 176px
+}
+
+@media only screen and (max-width: 767px) {
+.side-menu {
+  display: none;
+}
+}
+
+
+.side-menu a {
+  border-radius: 40px;
+  padding: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.side-menu a:hover {
+  color: #acabab;
+}
+
+.side-menu .home-link {
+font-weight: bold;
+color: black;
+}
+
+.side-menu .home-link:hover {
+  color: #4e4e4e;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+  color: #fff;
+  left: 0;
+}
+
+@media (max-height: 620px) {
+footer {
+  position: relative;
+}
+}
+
+
+.footer {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer a {
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+}
+
+.footer a:hover{
+  border: 1px solid #d4d4d4;
+  color: #d4d4d4;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  background: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1.5em;
+  
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+  margin-top: -290px;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color:#1f135f;
+  text-align:center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #1f135f;
+  margin: 30px 0;
+}  
+
+.input-box label {
+  position: absolute;
+  top: -7px;
+  left: 5px;
+  font-size: 1em;
+  color:#1f135f;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color:#1f135f;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #1f135f;
+  line-height: 57px;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #1f135f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background:#2e217c;
+}
+
+.input-box.success {
+  border-bottom: 2px solid #0db77b;
+}
+
+.input-box.error {
+  border-bottom: 2px solid #ff3860;
+}
+
+.input-box .error {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #ff3860;
+}
+
+.login-here {
+  display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding: 10px;
+    color: #2e217c;
+}
+
+.login-here a {
+    padding-left: 10px;
+    color:#8c67f1;
+}
+
+.login-here a:hover {
+    color:#a58fe3
+}
